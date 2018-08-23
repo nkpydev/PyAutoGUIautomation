@@ -19,21 +19,21 @@ def findonscreen(imgpath,time):
 
 def setupproxy(proxyip,portno):
     # Find Settings:
-    settingsfindx,settingsfindy = findonscreen('C:/SEO_AUTOMATION/settings.png',10)
+    settingsfindx,settingsfindy = findonscreen('/settings.png',10)
     pyautogui.click(settingsfindx,settingsfindy)
     # Find Options:
-    optionsfindx,optionsfindy = findonscreen('C:/SEO_AUTOMATION/options.png',10)
+    optionsfindx,optionsfindy = findonscreen('/options.png',10)
     pyautogui.click(optionsfindx,optionsfindy)
     # Find Search:
-    searchfindx,searchfindy = findonscreen('C:/SEO_AUTOMATION/findinoptions.png',10)
+    searchfindx,searchfindy = findonscreen('/findinoptions.png',10)
     pyautogui.click(searchfindx,searchfindy)
     # Type Network in Search:
     pyautogui.typewrite('Network',0.2)
     # Find Network Settings:
-    networkfindx,networkfindy = findonscreen('C:/SEO_AUTOMATION/networksettings.png',10)
+    networkfindx,networkfindy = findonscreen('/networksettings.png',10)
     pyautogui.click(networkfindx,networkfindy)
     # Find Manual Proxy Config:
-    mproxyfindx,mproxyfindy = findonscreen('C:/SEO_AUTOMATION/manualproxyconfig.png',10)
+    mproxyfindx,mproxyfindy = findonscreen('/manualproxyconfig.png',10)
     pyautogui.click(mproxyfindx,mproxyfindy)
     time.sleep(2)
     pyautogui.press('tab')
@@ -45,17 +45,17 @@ def setupproxy(proxyip,portno):
     pyautogui.press('tab')
     pyautogui.press('space')
     # Find Final_OK:
-    finalokfindx,finalokfindy = findonscreen('C:/SEO_AUTOMATION/finalok.png',10)
+    finalokfindx,finalokfindy = findonscreen('/finalok.png',10)
     pyautogui.click(finalokfindx,finalokfindy)
     print("--->New Proxy Set! Now moving on further procedure!")
 
 def addnewtab():
-    tabbuttonx,tabbuttony = findonscreen('C:/SEO_AUTOMATION/newtab.png',10)
+    tabbuttonx,tabbuttony = findonscreen('/newtab.png',10)
     pyautogui.click(tabbuttonx,tabbuttony)
     print("--->New Tab Opened!")
 
 def opengoogle():
-    addressbarx,addressbary = findonscreen('C:/SEO_AUTOMATION/addressbar.png',10)
+    addressbarx,addressbary = findonscreen('/addressbar.png',10)
     pyautogui.click(addressbarx,addressbary)
     pyautogui.typewrite('http://google.com',0.2)
     pyautogui.press('enter')
@@ -65,29 +65,29 @@ def getsearchgoingon():
     print("\n4] Browser Work Started!!")
     pyautogui.typewrite('IP',0.2)
     pyautogui.press('enter')
-    # gsearchx,gsearchy = findonscreen('C:/SEO_AUTOMATION/gsearch.png',10)
+    # gsearchx,gsearchy = findonscreen('/gsearch.png',10)
     # pyautogui.click(gsearchx,gsearchy)
 
 def settingscleanup():
     # Opening Settings:
-    cleanupsettingsx,cleanupsettingsy = findonscreen('C:/SEO_AUTOMATION/settings.png',10)
+    cleanupsettingsx,cleanupsettingsy = findonscreen('/settings.png',10)
     pyautogui.click(cleanupsettingsx,cleanupsettingsy)
     # Opening Options:
-    cleanupoptionsx,cleanupoptionsy = findonscreen('C:/SEO_AUTOMATION/options.png',10)
+    cleanupoptionsx,cleanupoptionsy = findonscreen('/options.png',10)
     pyautogui.click(cleanupoptionsx,cleanupoptionsy)
     # Opening Find:
-    cleanupsearchx,cleanupsearchy = findonscreen('C:/SEO_AUTOMATION/findinoptions.png',10)
+    cleanupsearchx,cleanupsearchy = findonscreen('/findinoptions.png',10)
     pyautogui.click(cleanupsearchx,cleanupsearchy)
     pyautogui.typewrite('Network',0.2)
     time.sleep(1)
     # Open Network Settings:
-    cleanupnetworkfindx,cleanupnetworkfindy = findonscreen('C:/SEO_AUTOMATION/networksettings.png',10)
+    cleanupnetworkfindx,cleanupnetworkfindy = findonscreen('/networksettings.png',10)
     pyautogui.click(cleanupnetworkfindx,cleanupnetworkfindy)
     # Finding the Protocol:
-    cleanupprotocolx,cleanupprotocoly = findonscreen('C:/SEO_AUTOMATION/cleanupprotocol.png',10)
+    cleanupprotocolx,cleanupprotocoly = findonscreen('/cleanupprotocol.png',10)
     pyautogui.click(cleanupprotocolx,cleanupprotocoly)
     # Clearing up the HTTP Proxy IP:
-    cleanuphttpproxyx,cleanuphttpproxyy = findonscreen('C:/SEO_AUTOMATION/cleanuphttpproxy.png',10)
+    cleanuphttpproxyx,cleanuphttpproxyy = findonscreen('/cleanuphttpproxy.png',10)
     pyautogui.click(cleanuphttpproxyx,cleanuphttpproxyy)
     for i in range(0,16):
         pyautogui.press('backspace')
@@ -97,10 +97,10 @@ def settingscleanup():
     pyautogui.press('delete')
     print("--->Port Cleared!")
     # Set No Proxy:
-    cleanupnomproxyx,cleanupnomproxyy = findonscreen('C:/SEO_AUTOMATION/cleanupnoproxy.png',10)
+    cleanupnomproxyx,cleanupnomproxyy = findonscreen('/cleanupnoproxy.png',10)
     pyautogui.click(cleanupnomproxyx,cleanupnomproxyy)
     # Final OK:
-    cleanupfinalokx,cleanupfinaloky = findonscreen('C:/SEO_AUTOMATION/finalok.png',10)
+    cleanupfinalokx,cleanupfinaloky = findonscreen('/finalok.png',10)
     pyautogui.click(cleanupfinalokx,cleanupfinaloky)
     print("--->Clean Up Done!")
     
@@ -118,7 +118,7 @@ if __name__ == '__main__':
         print(e)
     finally:
         print("\n3] Setting up new Proxy!!")
-        setupproxy('45.57.202.78','3129')
+        setupproxy('1.1.1.1','1111')
         time.sleep(1)
         addnewtab()
         time.sleep(1)
