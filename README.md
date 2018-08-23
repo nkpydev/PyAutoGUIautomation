@@ -18,7 +18,7 @@ What you might need and how to run the script
 2] Firefox
 3] Replace the image with your own code
 4] Run the script
-	python .py	
+	python webautomation.py
 
 Disclaimer
 The author is not responsible for any damage caused by the script so use it with caution.
