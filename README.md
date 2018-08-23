@@ -1,6 +1,6 @@
 # PyAutoGUIautomation
 
-License
+**License:**
 This program is released under MIT license.
 
 About
