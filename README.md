@@ -1,10 +1,10 @@
 # PyAutoGUIautomation
 
 **License:**
-This program is released under MIT license.
+This program is released under [MIT license](https://github.com/nkpydev/PyAutoGUIautomation/blob/master/LICENSE).
 
 **About:**
-A Python Project to Automate Web Browser Activity, using PyAutoGUI Library
+A Python Project to Automate Web Browser Activity, using PyAutoGUI Library!
 
 This is my humble trial to Automate Firefox Browser - Changing Proxy, Opening New Tab, Going to Google to check IP, that is assigned to my Browser Instance.
 
@@ -14,21 +14,15 @@ Whatever images that I have supplied here will not work directly for anybody els
 
 **What you might need and how to run the script:**
 
-1] You must have pyautogui installed
+1] You must have "pyautogui" installed
 2] Firefox
 3] Replace the image with your own code
 4] Run the script
-	python webautomation.py
 
-**Disclaimer:**
-The author is not responsible for any damage caused by the script so use it with caution.
-**Also,note that this script is only for Educational purpose.
+``` python
+
+	python webautomation.py
+```
 
 **Author:**
-NK
-
-**GitHub:**
-https://github.com/nkpydev
-
-**E-mail:**
-nkadmin@dailywhitelables.com
+[NK](https://github.com/nkpydev)
